@@ -1,0 +1,16 @@
+<odoo>
+    <record id="purchase_order_form_inherit_weight_pixora" model="ir.ui.view">
+        <field name="name">purchase.order.form.inherit.weight.pixora</field>
+        <field name="model">purchase.order</field>
+        <field name="inherit_id" ref="purchase.purchase_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='picking_type_id']" position="after">
+                <label for="weight_total" string="Peso Totale" style="font-weight: bold; color: red;"/>
+                <div class="o_row">
+                    <field name="weight_total" readonly="1" class="oe_inline"/>
+                    <span style="font-weight: bold; color: red;"> Kg</span>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>
