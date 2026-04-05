@@ -3,3 +3,7 @@
   
 - Funzioni:
 - mostra il peso totale dei prodotti 
+
+
+## 📄 License  
+This project is licensed under the MIT License.
